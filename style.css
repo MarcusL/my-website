@@ -29,9 +29,37 @@ body {
 
 h1 {
   text-align: center;
-  color: #7f4f24;
+  color: #2e4a38;
   margin-bottom: 12px;
   font-size: 28px;
+}
+
+.price-block {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.price-box {
+  display: inline-block;
+  background-color: #fff8e7;
+  border: 2px solid #c29d59;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: 1.2em;
+  color: #3b2f1d;
+}
+
+.price-text {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #8b5e3c;
+}
+
+.price-note {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
 }
 
 .subtitle {
