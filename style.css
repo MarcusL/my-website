@@ -60,6 +60,7 @@ h1 {
   background: #5d4037;
 }
 .logo-container {
+   text-align: left;
   margin-bottom: 1rem;
 }
 
