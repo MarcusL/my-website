@@ -3,36 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Этно-программа встречи</title>
+  <title>Программа встречи туриста</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Этно-программа встречи</h1>
-    <section class="price-block">
-  <h2>Стоимость экскурсии</h2>
-  <div class="price-box">
-    <span class="price-text">Всего за <strong>250 $</strong></span>
-    <p class="price-note">* Включено: транспорт, сопровождение</p>
-  </div>
-</section>
-    <p class="subtitle">Погружение в культуру, природу и историю Кыргызстана</p>
+    <div class="lang-switcher">
+      <button onclick="setLanguage('ru')">RU</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
 
-    <ul class="program">
-      <li><strong>07:00</strong> — Встреча в аэропорту</li>
-      <li><strong>08:30</strong> — Заселение в отель</li>
-      <li><strong>09:30</strong> — Завтрак в <strong>Capito</strong></li>
-      <li><strong>13:00</strong> — Площадь Ала-Тоо, Нац. музей, Белый дом</li>
-      <li><strong>13:30–14:30</strong> — Обед в <strong>Navat</strong></li>
-      <li><strong>15:00</strong> — Музей Гапара Айтиева</li>
-      <li><strong>18:30</strong> — Новые парки, Новый Белый дом, Ынтымак</li>
-      <li><strong>19:00</strong> — Ужин в <strong>Шашлычник</strong></li>
-      <li><strong>20:30</strong> — Отвоз до отеля</li>
+    <h1 data-i18n="title">Программа встречи туриста</h1>
+
+    <ul class="program-list">
+      <li data-i18n="program.1">7:00 — Встречаем</li>
+      <li data-i18n="program.2">8:30 — Заселение в отель</li>
+      <li data-i18n="program.3">9:30 — Завтрак в Capito</li>
+      <li data-i18n="program.4">13:00 — Площадь Ала-Тоо / Нац. Исторический музей / Белый дом</li>
+      <li data-i18n="program.5">13:30-14:30 — Обед в Navat</li>
+      <li data-i18n="program.6">15:00 — Музей Гапара Айтиева</li>
+      <li data-i18n="program.7">18:30 — Новые парки</li>
+      <li data-i18n="program.8">— Новый Белый дом</li>
+      <li data-i18n="program.9">— Прогулка по Ынтымаку</li>
+      <li data-i18n="program.10">19:00 — Шашлычник / 20:30 — Отвоз в отель</li>
     </ul>
 
-    <footer>
-      © 2025 Этно-Тур Кыргызстана — Погрузитесь в настоящее!
-    </footer>
+    <div class="price">
+      <strong data-i18n="price">Цена: 200$ за день (всё включено)</strong>
+    </div>
   </div>
+
+  <script src="lang.js"></script>
 </body>
 </html>
