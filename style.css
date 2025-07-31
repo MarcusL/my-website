@@ -59,8 +59,10 @@ h1 {
 .lang-switcher button:hover {
   background: #5d4037;
 }
+/* ... твои существующие стили ... */
+
 .logo-container {
-   text-align: left;
+  text-align: left; /* оставим */
   margin-bottom: 1rem;
 }
 
@@ -68,4 +70,45 @@ h1 {
   max-width: 180px;
   height: auto;
   object-fit: contain;
+}
+
+/* Добавляем блок для топбара — обёртки с логотипом и кнопками */
+.topbar {
+  display: flex;
+  align-items: flex-end;  /* выравнивание по нижнему краю */
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Обновляем стили для лого внутри топбара */
+.logo-container {
+  flex-shrink: 0; /* чтобы лого не сжимался */
+}
+
+/* Размер логотипа — подбери по вкусу */
+.logo {
+  max-height: 40px;  /* высота лого, чтобы совпадал с кнопками */
+  height: auto;
+  width: auto;
+}
+
+/* Обновляем стили переключателя языков для выравнивания */
+.lang-switcher {
+  margin-left: auto; /* отодвинет кнопки максимально вправо */
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0; /* убираем чтобы не дублировать */
+}
+
+.lang-switcher button {
+  padding: 0.4rem 0.8rem;
+  background: #6d4c41;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lang-switcher button:hover {
+  background: #5d4037;
 }
