@@ -4,18 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Программа встречи туриста</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="logo-container">
-    <img src="travel.png" alt="Логотип тура" class="logo" />
-  </div>
   <div class="container">
-    <div class="lang-switcher">
-      <button onclick="setLanguage('ru')">RU</button>
-      <button onclick="setLanguage('en')">EN</button>
-    </div>
+    <header class="topbar">
+      <div class="logo-container">
+        <img src="travel.png" alt="Логотип тура" class="logo" />
+      </div>
+      <div class="lang-switcher">
+        <button onclick="setLanguage('ru')">RU</button>
+        <button onclick="setLanguage('en')">EN</button>
+      </div>
+    </header>
 
     <h1 data-i18n="title">Программа встречи туриста</h1>
 
@@ -32,8 +34,8 @@
       <li data-i18n="program.10">19:00 — Шашлычник / 20:30 — Отвоз в отель</li>
     </ul>
 
-    <div class="price">
-      <strong data-i18n="price">Цена: 200$ за день (всё включено)</strong>
+    <div class="price" data-i18n="price">
+      Цена: 200$ за день (всё включено)
     </div>
   </div>
 
